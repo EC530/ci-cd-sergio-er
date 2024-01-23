@@ -1,5 +1,5 @@
 def MatrixMult(A,B):
-    C = "Result"
+    C = 1
     return C
 
 
