@@ -1,5 +1,15 @@
 def validateMatrix(matrix):
+    """
+    Validate if the given matrix is valid:
+   - Check if the matrix is a list.
+   - Ensure all rows have the same number of columns.
+   - Verify that all elements are numerical.
 
+    :param matrix:
+    - (List) The matrix to be validated.
+    :return:
+    - bool: True if the matrix is valid, False otherwise.
+    """
     if not isinstance(matrix, list):
         return False
 
@@ -13,10 +23,26 @@ def validateMatrix(matrix):
     return True
 
 def validateDimensions(matrix1, matrix2):
+    """
+    Validate if the dimensions of two matrices allow for matrix multiplication.
+
+    :param matrix1: The first matrix. (List)
+    :param matrix2: The second matrix. (List)
+    :return: bool - True if the dimensions are valid, False otherwise.
+    """
     if len(matrix1[0]) != len(matrix2):
         return False
     return True
+
 def MatrixMult(A,B):
+    """
+    Perform matrix multiplication.
+
+    :param A: The first matrix.
+    :param B: The second matrix.
+    :return: list or str: The result of matrix multiplication if successful,
+    or an error message if invalid input or dimensions.
+    """
     if not validateMatrix(A) or not validateMatrix(B):
         return "Error: Invalid input matrices. Please ensure they are valid matrices with only numerical elements."
 
