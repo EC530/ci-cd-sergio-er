@@ -22,7 +22,7 @@ def validateMatrix(matrix):
 
     return True
 
-def validateDimensions(matrix1, matrix2):
+def validateDimensions(matrixA, matrixB):
     """
     Validate if the dimensions of two matrices allow for matrix multiplication.
 
@@ -30,7 +30,7 @@ def validateDimensions(matrix1, matrix2):
     :param matrix2: The second matrix. (List)
     :return: bool - True if the dimensions are valid, False otherwise.
     """
-    if len(matrix1[0]) != len(matrix2):
+    if len(matrixA[0]) != len(matrixB):
         return False
     return True
 
