@@ -18,7 +18,7 @@ def validateDimensions(matrix1, matrix2):
     return True
 def MatrixMult(A,B):
     if not validateMatrix(A) or not validateMatrix(B):
-        return "Error: Invalid input matrices. Please ensure they are valid matrices with numerical elements."
+        return "Error: Invalid input matrices. Please ensure they are valid matrices with only numerical elements."
 
     if not validateDimensions(A, B):
         return "Error: Invalid matrix dimensions for multiplication."
