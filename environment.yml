@@ -3,14 +3,14 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.8  # Specify the version of Python you need
+  - python=3.12
   - numpy
   - pandas
   - scipy
   - matplotlib
-  - pytest  # If you're using pytest for testing
-  - flake8  # If you're using flake8 for linting
+  - pytest
+  - flake8
   - pip
   - pip:
-      - somepippackage==1.0.5
+      - somepippackage==1.0.4
       - anotherpippackage
