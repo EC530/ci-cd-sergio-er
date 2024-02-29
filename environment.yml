@@ -1,0 +1,16 @@
+name: myprojectenv
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8  # Specify the version of Python you need
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - pytest  # If you're using pytest for testing
+  - flake8  # If you're using flake8 for linting
+  - pip
+  - pip:
+      - somepippackage==1.0.5
+      - anotherpippackage
