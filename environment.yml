@@ -10,7 +10,3 @@ dependencies:
   - matplotlib
   - pytest
   - flake8
-  - pip
-  - pip:
-      - somepippackage==1.0.4
-      - anotherpippackage
