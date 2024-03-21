@@ -1,5 +1,4 @@
-import pytest
-from MatrixMult import validateMatrix, validateDimensions, MatrixMult
+from src.MatrixMultEC530.MatrixMult import validateMatrix, validateDimensions, MatrixMult
 
 def testValidateMatrixValid():
     matrix = [[1, 2, 3], [4, 5, 6]]
