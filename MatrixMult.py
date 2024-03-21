@@ -59,12 +59,11 @@ def MatrixMult(A,B):
 
     return result
 
+def main():
+    A = [[1, 2], [3, 4]]
+    B = [[2, 0], [1, 2]]
+    result = MatrixMult(A, B)
+    print(f"Result of matrix multiplication: {result}")
 
-"""if __name__ == "__main__":
-    A = [[2, 1],
-         [1, 2]]
-
-    B = [[1, 'a'],
-         [0, 1]]
-    C = MatrixMult(A,B)
-    print(C)"""
+if __name__ == "__main__":
+    main()
